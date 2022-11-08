@@ -1,0 +1,12 @@
+@function perc($size) {
+    @return $size;
+}
+
+@function set-text-color($bcolor) {
+    @if(lightness($bcolor) > 30) {
+        @return $light-color;
+    }
+    @else {
+        @return white;
+    }
+}

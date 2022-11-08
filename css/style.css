@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+section {
+  padding: 5rem 1rem;
+}
+
+.link-btn {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border: 0.1rem solid #2e0ebc;
+  color: #2e0ebc;
+  background: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.link-btn:hover {
+  background: #2e0ebc;
+  color: #fff;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #222;
+}
+
+.header {
+  z-index: 1000;
+  padding: 2rem 0;
+}
+.header.active {
+  padding: 2rem 0;
+  background: #2e0ebc;
+}
+.header .nav a {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #fff;
+}
+.header .nav a:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 0.5rem;
+}
+.header .icons div {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.header #menu-btn {
+  display: none;
+}
+
+.footer {
+  text-align: center;
+}
+.footer .logo {
+  font-size: 3rem;
+  color: #2e0ebc;
+  font-weight: bolder;
+}
+.footer .credit {
+  margin: 2rem 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #222;
+}
+.footer .credit span {
+  text-decoration: underline !important;
+}
+.footer .share {
+  margin-top: 3rem;
+}
+.footer .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  border: 0.1rem solid #2e0ebc;
+  color: #2e0ebc;
+  margin: 0 0.3rem;
+}
+.footer .share a:hover {
+  background: #2e0ebc;
+  color: #fff;
+}
+
+.home span {
+  font-size: 2.5rem;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 59.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #2e0ebc;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+}
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/chaisuttabar_1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.home span {
+  color: #fff;
+}
+.home h3 {
+  padding: 1rem 0;
+  font-size: 3rem;
+  color: #fff;
+}
+.home .link-btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.menu {
+  background: #eee;
+}
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.menu .box-container .box {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+}
+.menu .box-container .box:hover {
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(9, 0, 0, 0.1);
+  transform: translateY(-1rem);
+}
+.menu .box-container .box img {
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+.menu .box-container .box h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #222;
+}
+.menu .box-container .box p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.contact .contact-info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.contact .contact-info-container .box {
+  border: 0.1rem solid #2e0ebc;
+  padding: 3rem 2rem;
+  border: 0.1rem solid #2e0ebc;
+  text-align: center;
+}
+.contact .contact-info-container .box:hover i {
+  background: #2e0ebc;
+  color: #fff;
+}
+.contact .contact-info-container .box i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  border: 0.1rem solid #2e0ebc;
+  color: #2e0ebc;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact .contact-info-container .box h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #222;
+  padding: 1rem 0;
+}
+.contact .contact-info-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.subs {
+  border-radius: 50%;
+  border: 3px solid #2e0ebc;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    scroll-padding-top: 8rem;
+  }
+  .home h3 {
+    font-size: 4rem;
+  }
+  section {
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 768px) {
+  .login-form form {
+    padding: 3rem 2rem;
+  }
+  .login-form form h3 {
+    font-size: 1.7rem;
+  }
+  .header {
+    padding: 2rem 2rem;
+  }
+  .header.active {
+    padding: 2rem;
+  }
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+  .header .nav {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-flow: column;
+    padding: 1rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .nav.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .nav a {
+    margin: 1rem 2rem;
+    color: #222;
+  }
+  .contact .map {
+    height: 25rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
